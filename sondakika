@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şok Haber: Beklenmedik Barışma Hamlesi!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: red;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .reveal-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background: red;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Şok Haber: Beklenmedik Barışma Hamlesi!</h1>
+        <p>Son dakika! Uzmanlar, büyük bir geri dönüşü duyurdu. Kaynaklara göre, eski sevgililer arasındaki buzlar eriyor ve beklenmedik bir barışma ihtimali gündemde.</p>
+        <p>Yakın çevrelerin verdiği bilgilere göre, "çok özel birinin" bir hata yaptığını fark ettiği ve bunu düzeltmek için büyük bir adım atmaya hazırlandığı öğrenildi. Uzmanlar, "Bu büyük bir olay. Kimse böyle bir hamle beklemiyordu." yorumunu yaptı.</p>
+        <button class="reveal-button" onclick="revealMessage()">Detaylar için tıklayın...</button>
+        <div class="content hidden" id="hiddenMessage">
+            <h2>ŞAKA!</h2>
+            <p>Ama aslında şu gerçek ki: Seni çok özledim ve tekrar konuşmayı çok isterim. Ne dersin, büyük bir barışma haberi gerçek olsun mu? :)</p>
+        </div>
+    </div>
+    <script>
+        function revealMessage() {
+            document.getElementById("hiddenMessage").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
